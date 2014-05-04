@@ -1,0 +1,24 @@
+CPSC 317 Assignment 3 Part 3
+Wei You
+r9e7
+77610095
+
+#1.
+Because TCP is a two way connection. After the three-way handshake, both ends can send
+and receive, so the receiver of the original SYN will need to know if the sender
+successfully receives the ACK of SYN. This is why the last ACK of ACK is needed for
+establishing the TCO connection. On the other hand, STP is only a one way connection.
+The sender of SYN can only send and receiver can only receive, so a three-way handshake
+is not necessary.
+
+#2.
+In STP, the RESET packet will terminate the sending/receiving completely.
+In TCP, the RST segment only tells the receiver of RST to stop sending but
+the sender can still send.
+
+#3.
+Adaptive timeout retransmission can use the connection more effectively. With
+fixed timeout value, if multiple packets are dropped, because they have the same
+timeout, the sender will send the packets again at the same time. This will make
+a congestion and lower the efficiency of the connection. Adaptive timeout avoids
+this.
