@@ -1,0 +1,63 @@
+#3
+I used the three snippets provided with an extra assembly code in S6-if.s (jump) to test my program
+All the tests succeeded. My implementation worked.
+
+#4
+S5:
+Loop through the array and add up all the elements and store the sum result in s
+
+S5a:
+r0 is initialized to 0.
+r2 is initialized to 0.
+r1 loads the address of the next item in array.
+r3 loads the value of the next item in array.
+r2 is updated to the sum of r2 and r3.
+r0 is incremented.
+continue the above procedures until r0 is 10.
+After all the steps, r3 is storing the sum of the elements in the entire array.
+Then store the sum(r3) into s.
+
+S5:
+r0 is initialized to 0.
+r1 loads the address of a[0].
+r2 is initialized to 0.
+r4 is initialized to -10.
+loop:
+copy r0 into r5.
+check the value of i, but adding -10 and check the sum, if the sum equals to 0, break out of the loop.
+r3 loads the valude of the next element in the array.
+r2 is updated to the sum of r2 and r3.
+r0 is incremented.
+go back to the beginning of the loop.
+after the loop is done, store r0(temp_i) into i, and r2(temp_s) into s.
+
+S6: 
+find the max value of the two
+
+loads address of a into r0.
+loads value of a into r0.
+loads address of b into r1.
+loads value of b into r1.
+copy value of b into r2.
+do twos complement to r2 to get -b and put it in r2.
+calculates a+(-b) and put the result in r2.
+if the result is greater than 0, go to then and load the value of a into r3.
+if not, go to else and load the value of b into r3.
+load the address of max into r0.
+store the value in r3(temp_max) into max.
+
+#5
+load 0 into r0 (counter)
+load address of a into r1
+load address of min into r2
+load value of min into r2
+load -10 into r4
+loop:
+make a copy of r0 into r5, check the value, if it equals to 10, jump to end_loop
+load a[r0] into r3
+make a copy of r2 into r6
+apply twos complement to r3 and calculate r6+(-r3)
+if the result is greater than 0, which means temp_min is greater than a[r0], jump to then and store value of a[r0] into r2
+if not, do nothing
+increment r0 and get back to the beginning of loop.
+after the loop is done, store r2(temp_min) into min, r0(temp_i) into i.
