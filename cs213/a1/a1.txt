@@ -1,0 +1,8 @@
+1. I am using Linux system provided from school for this course and I have got 	  it setup and working.
+
+3. For computer in school(Linux), the result from my program is Little Endian
+   For my own laptop(intel,Microsoft), the result is Little Endian
+
+5. My test cases provided full coverage and all test passed.
+
+6. I have familiarized myself with the course policies and understand the    	plagiarism guidelines.
