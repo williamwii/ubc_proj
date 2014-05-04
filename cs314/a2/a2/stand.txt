@@ -1,0 +1,6 @@
+# This file contains a single pose of the robot standing.
+#
+#          BODY           | HEAD  |  LEFT ARM   |  RIGHT ARM  |     LEFT LEG       |     RIGHT LEG
+#  X  |  Y  |  Z  | ANGLE | ANGLE | SHLD | ELBW | SHLD | ELBW | HIP  | KNEE | ANKL | HIP  | KNEE | ANKL
+# --------------------------------------------------------------------------------------------------------
+  0.0   3.0   0.0       0      -2      -8     12     -3      5      8    -16      6      4    -6	  3
