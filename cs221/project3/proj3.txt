@@ -1,0 +1,13 @@
+mys04: sorted list, insert is fast if is order, if not, it is very slow
+
+mys01: unsorted list, insert is always fast, remove is slow
+
+mys07: quadratic probing hashtable, fst on everything
+
+mys03: binary search tree, fast for random, slow for sorted
+
+mys06: splay tree,fast for insert in order, slow for random
+
+mys02: avl tree, faster on finding after removing all items
+
+mys05: avl tree with tombstone, harding to find

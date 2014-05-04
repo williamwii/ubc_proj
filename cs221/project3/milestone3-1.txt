@@ -1,0 +1,60 @@
+CPSC 221, 2010W2
+Programming Project 3
+Dictionary Dora and the Case of the Mixed Up Sets
+
+Student: Wei You
+CS ID: r9e7
+
+MILESTONE3-1
+
+mys07:
+  This is a Quadratic Probing Hashtable dictionary implementation. A hashtable is an
+  implementation that uses a hash function to provide a hashcode for each key. The ideal
+  implementation is to make the function to create a unique code for each key but this is
+  nearly impossible. If collisions happen, Quadratic Probing Hashtable add uses the formula
+  h(k,i) = h(k) + (c1)(i) + (c2)(i^2), where h(k,i) is the ith probe position,h(k) is the
+  hash function, c1,c2 are constants, to find the next position of the key if the original
+  position is taken. This implementation might take some extra unused memory, but it is very
+  fast to insert, find, and remove. I used two sorted list in descending, ascending order, and 
+  a random list to test the insert, find and remove function of this mystery. The outputs are
+  
+descending order sorted list(size 50000):
+1 0
+1024 0
+2048 0
+4096 0
+8192 0
+16384 0
+32768 0
+65536 1
+131072 2
+150002 2
+
+ascending order sorted list(size 50000):
+1 0
+1024 0
+2048 0
+4096 0
+8192 0
+16384 0
+32768 1
+65536 2
+98304 2
+131072 3
+150001 3
+
+random list(size 50000):
+1 0
+1024 0
+2048 0
+4096 0
+8192 0
+16384 0
+32768 1
+65536 2
+98304 2
+131072 3
+150001 3
+
+Because it is fast for all inserting, finding and removing, I know this is a hashtable
+dictionary. Insert, find and remove for hashtable is O(1).
