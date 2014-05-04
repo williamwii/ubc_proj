@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{b0235bad-5ee7-4ec7-a881-b5df32c69e24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{15065caf-af44-4069-bb72-808c7d40dcbe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="camera.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="image.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="intersection.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="lexer.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="light.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="linalg.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="material.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="object.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="parser.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="ray.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="raytracer.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="image.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="lexer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="light.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="linalg.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="material.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="object.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="parser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="raytracer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

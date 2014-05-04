@@ -1,0 +1,31 @@
+Compiling and Running on *nix
+=============================
+
+The provided Makefile will compile this assignment on a number of Linux/Unix
+base systems. All you need to do is run:
+
+    make
+
+To run the executable:
+
+    ./raytracer
+
+By default this will render the scene named scenes/basic.ray and save the 
+resulting image as output.ppm.
+
+To run the executable and render a different scene, pass it as the first
+argument:
+
+    ./raytracer scenes/your_scene.ray
+
+To specify the output image filename, pass it is the second argument.
+
+    ./raytracer scenes/your_scene.ray images/your_image.ppm
+
+
+
+Scene Format
+============
+
+See scenes/basic.ray for a self-describing scene file.
+
