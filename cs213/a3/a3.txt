@@ -1,0 +1,99 @@
+#3
+load 0 into r0
+load address of c into r1
+load value of c into r2
+store value 0 into c
+increment r0 by 1
+flip the bits of r0 twice to get the orignial value
+shift the bits of r0 8 bits to the left
+shift the bits of r0 8 bits to the right to get the original value
+store value 1 into c[1]
+load value of c[1] into r3
+add value of r0 and r3 and store the sum into r3
+use bitwise and with r0 and r3 and store the result in r3
+load value of c[1] into r3
+store the value 1 into c[2]
+load value of c[2] into r3
+store the value 1 into c[3]
+copy the value of r2(c) into r5
+increment the value in r5 by 4
+increment the value in r5 by 4
+increment the value in r5 by 4
+decrement the value in r5 by 4
+increment the value in r5 by 4
+increment the value in r5 by 1
+decrement the value in r5 by 1
+store the address value of c[3] into c[0]
+store the address value of c[3] into c ( change the array pointer pointing to the third element)
+load value of c[3](original c[6]) into r6
+store value of c[3](original c[6]) into c[0](original c[3])
+laod value 0 into r0
+store value 0 into c
+do nothing
+halt
+-All of the tests succeeded. My implementation works.
+
+#4
+S3:
+load 0 into r0
+load address of c into r1
+load value of c into r2
+store value 0 into c
+increment r0 by 1
+store value 1 into c[1]
+load value of c[1] into r3
+store the value 1 into c[2]
+load value of c[2] into r3
+store the value 1 into c[3]
+copy the value of r2(c) into r5
+increment the value in r5 by 4
+increment the value in r5 by 4
+increment the value in r5 by 4
+store the address value of c[3] into c[0]
+store the address value of c[3] into c ( change the array pointer pointing to the third element)
+load value of c[3](original c[6]) into r6
+store value of c[3](original c[6]) into c[0](original c[3])
+laod value 0 into r0
+store value 0 into c
+halt
+
+S4:
+load the address of value d0 into r0(create a pointer to d0)
+load the value from the adress that is 4 bytes after d0 into r1
+store value of d0.f into d0.e ( store 2 in d0.e )
+load address of value d1 into r0(create a pointer to d1)
+load the value of d1 into r0
+load the value of d1->f into r1
+store the valude of d1->f into d1->e
+halt
+
+#5
+Because before this, there is a instruction that set the array pointer c pointing
+to the third element of the array(c[3]). This changes c[0] to become the original c[3],
+so the statement *c=c[3] will change the value of c[0](original c[3]) to c[3](original c[6])
+
+#7
+8) The test freed the memory while it is still in use.
+   The free statement should be after the while loop, because now it is pushing
+   the "Zero" into the freed space and then clear it to 0.
+9) The test freed the memory while it is still in use.
+   The free statement should be after the while loop, because now it is pushing
+   the "One" into the freed space and then clear it to 0.
+10) In the pop function of stack, it freed the memory containing the StackElement
+    and then get the name from that freed space. The machine might put other things
+	in that space and then try to return the name from that space.
+
+#9
+11) The HashMap is holding all the Things and not deleting any even after the Thing
+    is not needed anymore. For a large amount of tests, it will certainly blow up the
+	memory with the super large HashMap.
+12)
+test5:0m0.236s
+test6:0m0.308s
+test7:0m0.612s
+test8:0m1.880s
+13)
+test9:0m0.268s
+test10:0m0.660s
+test11:0m4.636s
+test12:0m25.494s
