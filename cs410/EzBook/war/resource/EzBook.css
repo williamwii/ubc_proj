@@ -1,0 +1,127 @@
+
+a:hover {
+  cursor: pointer;
+}
+
+.container, .navbar .container {
+	max-width: 1020px;
+}
+
+.navbar-search .search-query {
+	margin-top: 5px;
+}
+
+.navbar .brand {
+	padding: 4px 20px;
+}
+
+.nav .navbar-search {
+  margin: 0px;
+}
+
+.bosung-logo {
+}
+
+.bosung-header {
+  color: white;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+  padding: 40px 0px;
+  text-align: left;
+  position: relative;
+  font-family: "Helvetica Neue";
+  border-bottom: 1px solid #DDD;
+  background: -webkit-linear-gradient(45deg, #000099 0%, #00CCFF 100%);
+  background: linear-gradient(45deg, rgb(0, 0, 153) 0%, rgb(0, 204, 255) 100%);
+  background: -moz-linear-gradient(45deg, rgb(0, 0, 153) 0%, rgb(0, 204, 255) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000099', endColorstr='#00CCFF',GradientType=1);
+}
+
+.bosung-header::after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(/resource/bs-background.png) repeat center center;
+  opacity: .7;
+}
+
+.bosung-header .container {
+  z-index: 2;
+  position: relative;
+}
+
+.bosung-header h1 {
+  font-size: 50px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.bosung-header p {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.bosung-footer {
+  margin-top: 35px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  padding: 20px 20px;
+  text-align: center;
+  font-size: 14px;
+  border-top:1px solid #E5E5E5;
+  background-color: whiteSmoke;
+}
+
+.bosung-footer small {
+  font-size: 100%;
+  color: #999;
+}
+
+.price-span {
+	margin-left: 0px;
+}
+
+.price-input {
+	width: 40%;
+	float: left;
+}
+
+.to-label {
+	margin: 5px 5px;
+	float: left;
+}
+        		
+.red {
+  color: red;
+}
+
+.fb_logo {
+  width: 20px;
+  height: 20px;
+  margin-top: -5px;
+}
+
+.item {
+	padding: 10px 0px;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.item-image {
+	margin: 5px;
+}
+
+.item-title {
+	font-weight: bold;
+}
+
+.item-btn {
+	margin: 5px;
+	min-width: 71px;
+}

@@ -1,0 +1,2 @@
+serviceClass: com.ezbook.client.PostService
+path: A7F31046DE829B12D118BCD7DFF9808E.gwt.rpc

@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosung Books</title>
+    
+    <!--   Load all required css and javascript   -->
+    <link rel="stylesheet" href="resource/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resource/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="resource/EzBook.css">
+    <link rel="stylesheet" href="resource/EzBook-responsive.css">
+    
+    <script type="text/javascript" src="resource/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="resource/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps?sensor=true&gwt=1&file=api&v=2&key=AIzaSyCppDTgFhsTC5RIosDjkJgejfBcZIHG0e0"></script>
+    <script type="text/javascript" src="resource/EzBook.js"></script>
+    <script type="text/javascript" src="ezbook/ezbook.nocache.js"></script>
+  </head>
+  
+  <body>
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    
+    <!--   Navigation Bar   -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+    	<div class="navbar-inner">
+        <div id="navbar-container" class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+      	  <a class="brand collapse-btn" href="#EzBook:ezbook"><img class="bosung-logo" src="resource/bosunglogo4.png"/></a>
+      	  <div class="nav-collapse collapse">
+        		<ul id="bosung-navbar" class="nav">
+        		  <li>
+          		  <div class="navbar-search">
+          		    <input id="navbar-query" type="text" class="search-query" placeholder="Quick search"/>
+          		    <button id="navbar-search-btn" class="btn btn-inverse collapse-btn"><i class="icon-search icon-white"></i></button>
+          		  </div>
+        		  </li>
+        		  <li id="navbar-marketplace"><a class="collapse-btn" href="#Marketplace:marketplace">Marketplace</a></li>
+        		  <li id="navbar-post"><a class="collapse-btn" href="#Post:new">Post</a></li>
+            	  <li id="navbar-subscription"><a class="collapse-btn" href="#Subscriptions:subscriptions">Subscriptions</a></li>
+        		</ul>
+        		<ul id="connect" class="nav pull-right">
+        		  <li id="connect-li"><a id="connect-btn"><img class="fb_logo" src="resource/fb_logo.png"/> Connect</a></li>
+        		  <li id="logged-in-li" class="dropdown" style="display:none;">
+            		<a id="logged-in-btn" href="#" class="dropdown-toggle" data-toggle="dropdown"></a>
+            		<ul class="dropdown-menu">
+            			<li><a class="collapse-btn" href="#MyListings:myListings">My Listings</a></li>
+            			<li class="divider"></li>
+            			<li><a id="logout-btn">Log out</a></li>
+            		</ul>
+        		  </li>
+        		</ul>
+      		</div>
+        </div>
+    	</div>
+    </div>
+    
+    <!--   Header   -->
+    <header class="bosung-header">
+      <div class="container">
+        <h1>Bosung Books</h1>
+        <p class="lead">The Students' Textbook Marketplace</p>
+      </div>
+    </header>
+    
+    <!--   Content   -->
+    <div id="content-panel" class="container">
+      <!--   This part is shown if Javascript is disabled   -->
+      <noscript>
+        <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+          Your web browser must have JavaScript enabled
+          in order for this application to display correctly.
+        </div>
+      </noscript>
+    </div>
+    
+    <!--   Footer   -->
+    <footer class="bosung-footer">
+      <div class="container">
+        <small>Handcrafted by a group of UBC students</small>
+        <div>
+          <a>About Us</a>
+          <small> | </small>
+          <a href="#Feedback:feedback">Feedback</a>
+        </div>
+      </div>
+    </footer>
+    <div id="fb-root"></div>
+  </body>
+</html>

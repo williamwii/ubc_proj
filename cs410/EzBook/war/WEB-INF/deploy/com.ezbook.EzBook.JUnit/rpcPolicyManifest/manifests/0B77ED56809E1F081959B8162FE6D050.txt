@@ -1,0 +1,2 @@
+serviceClass: com.ezbook.client.AmazonService
+path: 00BC858D97272F1E29C8E6F68093A5EA.gwt.rpc

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<queue-entries>
+	<queue>
+		<name>default</name>
+		<rate>1/s</rate>
+		<retry-parameters>
+			<min-backoff-seconds>2</min-backoff-seconds>
+		</retry-parameters>
+	</queue>
+	
+	<queue>
+		<name>email</name>
+		<rate>30/m</rate>
+		<retry-parameters>
+			<min-backoff-seconds>5</min-backoff-seconds>
+		</retry-parameters>
+	</queue>
+</queue-entries>

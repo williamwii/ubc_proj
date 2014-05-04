@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /com.ezbook.EzBook.JUnit/

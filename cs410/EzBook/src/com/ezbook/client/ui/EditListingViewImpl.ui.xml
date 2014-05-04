@@ -1,0 +1,81 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+                         xmlns:g="urn:import:com.google.gwt.user.client.ui">
+        <g:HTMLPanel>
+        	<style>
+        		.alert-info, .alert-block {
+        			margin-bottom: 0px;
+        		}
+        		
+        		.amazon-info, .form-alert, alert-success {
+        			max-width: 420px;
+        		}
+        		
+        		.alert-block {
+        			padding: 4px 6px;
+        		}
+        	</style>
+        	<legend>Edit Listing</legend>
+	        	
+	        <form id="edit-form" class="form-horizontal">
+	        	<g:HTML ui:field="errorPanel"></g:HTML>
+	        	<div class="control-group">
+	        		<label class="control-label" for="title">Title <span class="red">*</span></label>
+	        		<div class="controls">
+	        			<g:TextBox ui:field="title"></g:TextBox>
+	        		</div>
+	        	</div>
+	        	
+	        	<div class="control-group">
+	        		<label class="control-label" for="author">Author</label>
+	        		<div class="controls">
+	        			<g:TextBox ui:field="author"></g:TextBox>
+	        		</div>
+	        	</div>
+	        	
+	        	<div class="control-group">
+	        		<label class="control-label" for="isbn">ISBN</label>
+	        		<div class="controls">
+	        			<g:TextBox ui:field="isbn"></g:TextBox>
+	        		</div>
+	        	</div>
+	        	
+	        	<div class="control-group">
+	        		<label class="control-label" for="imageUrl">Cover Image Url</label>
+	        		<div class="controls">
+	        			<g:TextBox ui:field="imageUrl"></g:TextBox>
+	        			<span class="help-block">The url of cover image of the book.</span>
+	        		</div>
+	        	</div>
+	        	
+	        	<div class="control-group">
+	        		<label class="control-label" for="price">Price <span class="red">*</span></label>
+	        		<div class="controls">
+	        			<g:TextBox ui:field="price"></g:TextBox>
+	        		</div>
+	        	</div>
+	        	
+	        	<div class="control-group">
+	        		<label class="control-label" for="address">Meetup Location</label>
+	        		<div class="controls">
+	        			<g:TextBox ui:field="address"></g:TextBox>
+	        			<span class="help-block">Propose a possible meet up location to buyers.</span>
+	        		</div>
+	        	</div>
+	        	
+	        	<div class="control-group">
+	        		<label class="control-label" for="comment">Additional Details  <span class="red">*</span></label>
+	        		<div class="controls">
+	        			<g:TextArea ui:field="comment"></g:TextArea>
+	        			<span class="help-block">Tell buyers more about your book. The condition, edition, etc.</span>
+	        		</div>
+	        	</div>
+	        	
+	        	<div class="control-group">
+	        		<g:HTML ui:field="formAlert"></g:HTML>
+	        	</div>
+	        	
+	        	<g:Anchor ui:field="postBtn">Save</g:Anchor>
+        	</form>
+        </g:HTMLPanel>
+</ui:UiBinder>

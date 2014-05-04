@@ -1,0 +1,38 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+                         xmlns:g="urn:import:com.google.gwt.user.client.ui">
+        <g:HTMLPanel>
+        	<div class="span9">
+        		<div class="row">
+        			<div class="span3">
+        				<g:Image ui:field="image"/>
+        			</div>
+        			<g:HTMLPanel ui:field="infoPanel">
+        				<g:Label ui:field="title"></g:Label>
+        				<g:Label ui:field="author"></g:Label>
+        				<g:Label ui:field="isbn"></g:Label>
+        				<g:Label ui:field="price"></g:Label>
+        				<g:Label ui:field="postDate"></g:Label>
+        				<g:Label ui:field="contact"></g:Label>
+        				<div>Email: <g:Anchor ui:field="email"></g:Anchor></div>
+        				<g:Label ui:field="details"></g:Label>
+        				<g:Label ui:field="location"></g:Label>
+   
+           				<div class="control-group">
+						   <g:HTML ui:field="formAlert"></g:HTML>
+						</div>
+
+        				<g:HTMLPanel ui:field="mapPanel">
+        					<div class="accordion-heading">
+        					    <g:InlineHTML ui:field="mapPanelLocation"></g:InlineHTML>
+        						<g:Anchor ui:field="mapBtn"></g:Anchor>
+        					</div>
+        					<g:HTMLPanel ui:field="map">
+        						<g:Image ui:field="mapImage"></g:Image>
+        					</g:HTMLPanel>
+        				</g:HTMLPanel>
+        			</g:HTMLPanel>
+        		</div>
+        	</div>
+        </g:HTMLPanel>
+</ui:UiBinder>

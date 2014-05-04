@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<backends>
+	<backend name="email">
+   		<instances>5</instances>
+   		<class>B1</class>
+   		<options>
+   			<dynamic>true</dynamic>
+   		</options>
+ 	</backend>
+</backends>

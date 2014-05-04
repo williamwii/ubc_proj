@@ -1,0 +1,2 @@
+serviceClass: com.ezbook.client.FeedbackService
+path: 4B90A418D44C7D75B333B69E78AC1A14.gwt.rpc

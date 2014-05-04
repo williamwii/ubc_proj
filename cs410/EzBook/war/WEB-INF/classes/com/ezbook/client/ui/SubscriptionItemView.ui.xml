@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+                         xmlns:g="urn:import:com.google.gwt.user.client.ui">
+        <g:HTMLPanel>
+        	<div class="span9">
+        		<div class="row">
+        		    <g:HTML ui:field="errorPanel"></g:HTML>
+        			<div class="span3">
+        				<g:Image ui:field="image"/>
+        			</div>
+        			<g:HTMLPanel ui:field="infoPanel">
+        				<g:Label ui:field="title"></g:Label>
+        				<g:Label ui:field="author"></g:Label>
+        				<g:Label ui:field="isbn"></g:Label>
+        				<g:Label ui:field="subscriptionDate"></g:Label>
+        				<g:Label ui:field="priceMin"></g:Label>
+        				<g:Label ui:field="priceMax"></g:Label>
+        				<div>Email: <g:Anchor ui:field="email"></g:Anchor></div>
+   
+           				<div class="control-group">
+						   <g:HTML ui:field="formAlert"></g:HTML>
+						</div>
+
+        			</g:HTMLPanel>
+        			<g:HTMLPanel ui:field="listingPanel">
+        				<g:Anchor ui:field="unsubscribeBtn">Unsubscribe</g:Anchor>
+        			</g:HTMLPanel>
+        		</div>
+        	</div>
+        </g:HTMLPanel>
+</ui:UiBinder>

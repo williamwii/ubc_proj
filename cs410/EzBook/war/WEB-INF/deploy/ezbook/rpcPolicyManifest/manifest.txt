@@ -1,0 +1,10 @@
+# Module ezbook
+# RPC service class, partial path of RPC policy file
+com.ezbook.client.SubscriptionService, 2DC2B9FF2004127F7EDA74B5C32F8A90.gwt.rpc
+com.ezbook.client.AmazonService, 00BC858D97272F1E29C8E6F68093A5EA.gwt.rpc
+com.ezbook.client.MarketPlaceService, FB2FBE2377FE384A7328F7D2F3B988C8.gwt.rpc
+com.ezbook.client.FeedbackService, 4B90A418D44C7D75B333B69E78AC1A14.gwt.rpc
+com.ezbook.client.AuthService, ED07F1493BB7D1E50F1823515DA388CC.gwt.rpc
+com.ezbook.client.PostService, A7F31046DE829B12D118BCD7DFF9808E.gwt.rpc
+com.google.gwt.logging.shared.RemoteLoggingService, F964F41C33C14A791E377FAFA51E207C.gwt.rpc
+com.ezbook.client.MyListingsService, E5E58099FF364CCC025814FF5F74B912.gwt.rpc

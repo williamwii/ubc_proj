@@ -1,0 +1,27 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+                         xmlns:g="urn:import:com.google.gwt.user.client.ui">        
+        <g:HTMLPanel>
+        	<style>
+        		.bs-button {
+        			height: 50px;
+        			margin-bottom: 10px;
+        			padding-top: 11px;
+        			font-size: 20px;
+        		}
+        	</style>
+        	<p>
+        	 At Bosung Books, we understand how expensive college can be. That's why
+        	 we made this marketplace for you in mind, the student. We make sure the
+        	 students who use our marketplace buy their textbooks at the lowest price
+        	 possible by comparing the prices on Amazon! We also give the option for
+        	 students to create listings on our marketplace to resell their textbooks
+        	 when they are done with them. At Bosung Books, we are always dedicated
+        	 to making your experience in college better!
+        	</p>
+        	<div class="row-fluid">
+        		<g:Anchor ui:field="connectBtn">Connect with Facebook!</g:Anchor>
+        		<a class="btn btn-large span6 bs-button" href="#Marketplace:marketplace">Start Searching For Books</a>
+        	</div>
+        </g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,2 @@
+serviceClass: com.ezbook.client.SubscriptionService
+path: 2DC2B9FF2004127F7EDA74B5C32F8A90.gwt.rpc

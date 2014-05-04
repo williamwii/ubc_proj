@@ -1,0 +1,2 @@
+serviceClass: com.ezbook.client.AuthService
+path: ED07F1493BB7D1E50F1823515DA388CC.gwt.rpc

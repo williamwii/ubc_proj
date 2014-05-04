@@ -1,0 +1,28 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+                         xmlns:g="urn:import:com.google.gwt.user.client.ui">
+        <g:HTMLPanel>
+        	<style>
+        		.form-alert {
+        			max-width: 420px;
+        		}
+        	</style>
+        	<legend>Feedback</legend>
+			
+        	<form id="feedback-form" class="form-horizontal">
+	        	<div class="control-group">
+	        		<label class="control-label" for="message">Message <span class="red">*</span></label>
+	        		<div class="controls">
+	        			<g:TextArea ui:field="message"></g:TextArea>
+	        			<span class="help-block">Tell us what you think about Bosung Books</span>
+	        		</div>
+	        	</div>
+	        	
+	        	<div class="control-group">
+	        		<g:HTML ui:field="formAlert"></g:HTML>
+	        	</div>
+	        	
+	        	<g:Anchor ui:field="sendBtn">Send</g:Anchor>
+	        </form>
+        </g:HTMLPanel>
+</ui:UiBinder>

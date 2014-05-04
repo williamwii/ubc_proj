@@ -1,0 +1,2 @@
+serviceClass: com.ezbook.client.MarketPlaceService
+path: FB2FBE2377FE384A7328F7D2F3B988C8.gwt.rpc

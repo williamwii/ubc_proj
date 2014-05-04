@@ -1,0 +1,56 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+                         xmlns:g="urn:import:com.google.gwt.user.client.ui">
+        <g:HTMLPanel>
+        	<style>
+        		.alert-info, .alert-block {
+        			margin-bottom: 0px;
+        		}
+        		
+        		.alert-block {
+        			padding: 4px 6px;
+        		}
+        	</style>
+
+        	<legend>Search Marketplace <a id="marketplace-search-btn" class="btn btn-primary btn-small" onclick="toggleHide()">Hide</a></legend>
+	        	
+	        <form id="search-form" class="form-horizontal">
+	        	<g:HTML ui:field="errorPanel"></g:HTML>
+	        	<div class="control-group">
+	        		<label class="control-label" for="title">Title</label>
+	        		<div class="controls">
+	        			<g:TextBox ui:field="title"></g:TextBox>
+	        		</div>
+	        	</div>
+	        	<div class="control-group">
+	        		<label class="control-label" for="author">Author</label>
+	        		<div class="controls">
+	        			<g:TextBox ui:field="author"></g:TextBox>
+	        		</div>
+	        	</div>
+	        	<g:HTMLPanel ui:field="isbnDiv">
+	        		<label class="control-label" for="isbn">ISBN</label>
+	        		<div class="controls">
+	        			<g:TextBox ui:field="isbn"></g:TextBox>
+	        		</div>
+	        	</g:HTMLPanel>
+	        	<g:HTMLPanel ui:field="priceDiv">
+	        	    <label class="control-label" for="price">Price</label>
+	        		<div class="controls row">
+	        			<div class="span5 price-span">
+		        			<g:TextBox ui:field="minPrice"></g:TextBox>
+		        			<span class="to-label">to</span>
+		        			<g:TextBox ui:field="maxPrice"></g:TextBox>
+	        			</div>
+	        		</div>
+	        	</g:HTMLPanel>
+	        	<g:Anchor ui:field="search">Search</g:Anchor>
+        	</form>
+        	
+		    <div class="control-group">
+	        	<g:HTML ui:field="formAlert"></g:HTML>
+	        </div>
+	        
+        	<g:HTMLPanel ui:field="results"></g:HTMLPanel>
+        </g:HTMLPanel>
+</ui:UiBinder>

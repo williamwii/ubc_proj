@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>EzBook.html</welcome-file>
+	</welcome-file-list>
+
+	<!-- Session duration -->
+	<session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+	<!--  Filters  -->
+	<filter>
+		<filter-name>CacheControlFilter</filter-name>
+		<filter-class>com.ezbook.server.CacheControlFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CacheControlFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>ServerFilter</filter-name>
+		<filter-class>com.ezbook.server.ServerFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ServerFilter</filter-name>
+		<url-pattern>/server/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>SecurityFilter</filter-name>
+		<filter-class>com.ezbook.server.SecurityFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>SecurityFilter</filter-name>
+		<url-pattern>/secure/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- Servlets -->
+	<servlet>
+		<servlet-name>AmazonServiceImpl</servlet-name>
+		<servlet-class>com.ezbook.server.amazon.AmazonServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AmazonServiceImpl</servlet-name>
+		<url-pattern>/amazon</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AuthServiceImpl</servlet-name>
+		<servlet-class>com.ezbook.server.AuthServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AuthServiceImpl</servlet-name>
+		<url-pattern>/authorize</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MarketPlaceServiceImpl</servlet-name>
+		<servlet-class>com.ezbook.server.MarketPlaceServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MarketPlaceServiceImpl</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FBLoginServlet</servlet-name>
+		<servlet-class>com.ezbook.server.FBLoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FBLoginServlet</servlet-name>
+		<url-pattern>/fbLogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UnSubscribeServlet</servlet-name>
+		<servlet-class>com.ezbook.server.UnSubscribeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UnSubscribeServlet</servlet-name>
+		<url-pattern>/unsubscribe</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PostServiceImpl</servlet-name>
+		<servlet-class>com.ezbook.server.PostServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PostServiceImpl</servlet-name>
+		<url-pattern>/secure/post</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MyListingsServiceImpl</servlet-name>
+		<servlet-class>com.ezbook.server.MyListingsServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MyListingsServiceImpl</servlet-name>
+		<url-pattern>/secure/mylistings</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FeedbackServiceImpl</servlet-name>
+		<servlet-class>com.ezbook.server.FeedbackServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FeedbackServiceImpl</servlet-name>
+		<url-pattern>/secure/feedback</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EmailServlet</servlet-name>
+		<servlet-class>com.ezbook.server.EmailServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EmailServlet</servlet-name>
+		<url-pattern>/server/email</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SubscriptionEmailServlet</servlet-name>
+		<servlet-class>com.ezbook.server.SubscriptionEmailServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SubscriptionEmailServlet</servlet-name>
+		<url-pattern>/server/email/subscription</url-pattern>
+	</servlet-mapping>
+	
+    <servlet>
+  		<servlet-name>defaultMailHandler</servlet-name>
+  		<servlet-class>com.ezbook.server.DefaultMailHandler</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>defaultMailHandler</servlet-name>
+  		<url-pattern>/_ah/mail/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SystemServiceServlet</servlet-name>
+		<servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+		<init-param>
+			<param-name>services</param-name>
+			<param-value/>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SystemServiceServlet</servlet-name>
+		<url-pattern>/_ah/spi/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SubscriptionServiceImpl</servlet-name>
+		<servlet-class>com.ezbook.server.SubscriptionServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SubscriptionServiceImpl</servlet-name>
+		<url-pattern>/subscription</url-pattern>
+	</servlet-mapping>
+	
+	<security-constraint>
+  		<web-resource-collection>
+    		<url-pattern>/_ah/mail/*</url-pattern>
+  		</web-resource-collection>
+  		<auth-constraint>
+    		<role-name>admin</role-name>
+  		</auth-constraint>
+	</security-constraint>
+</web-app>

@@ -1,0 +1,2 @@
+serviceClass: com.ezbook.client.MyListingsService
+path: E5E58099FF364CCC025814FF5F74B912.gwt.rpc

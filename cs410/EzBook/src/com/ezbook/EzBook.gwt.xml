@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='ezbook'>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.google.gwt.user.User'/>
+
+  <!-- Inherit the default GWT style sheet.  You can change       -->
+  <!-- the theme of your GWT application by uncommenting          -->
+  <!-- any one of the following lines.                            -->
+  <!-- <inherits name='com.google.gwt.user.theme.clean.Clean'/>   -->
+  <!-- <inherits name='com.google.gwt.user.theme.standard.Standard'/> -->
+  <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+  <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+
+  <!-- Other module inherits                                      -->
+  <inherits name="com.google.gwt.activity.Activity"/>
+  <inherits name="com.google.gwt.place.Place"/>
+  <inherits name="com.google.gwt.json.JSON"/>
+  <inherits name="com.google.gwt.maps.GoogleMaps"/>
+  <inherits name="com.google.code.gwt.geolocation.Html5Geolocation" />
+
+  <!--
+  How to use Logging:
+  Logger logger = Logger.getLogger("NameOfYourLogger");
+  logger.log(Level.SEVERE, "this message should get logged");
+  -->
+  <inherits name="com.google.gwt.logging.Logging"/>
+
+  <!-- turn off gwt logging window -->
+  <set-property name="gwt.logging.simpleRemoteHandler" value="DISABLED" />
+  <set-property name="gwt.logging.popupHandler" value="DISABLED" />
+  
+  
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='com.ezbook.client.EzBookEntry'/>
+
+  <!-- Use ClientFactoryImpl by default -->
+  <replace-with class="com.ezbook.client.ClientFactoryImpl">
+    <when-type-is class="com.ezbook.client.ClientFactory"/>
+  </replace-with>
+    
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+  <source path='shared'/>
+
+</module>

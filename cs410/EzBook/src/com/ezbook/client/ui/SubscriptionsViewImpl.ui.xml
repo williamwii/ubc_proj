@@ -1,0 +1,93 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+                         xmlns:g="urn:import:com.google.gwt.user.client.ui">
+        <g:HTMLPanel>
+        	<style>
+        		.alert-info, .alert-block {
+        			margin-bottom: 0px;
+        		}
+        		
+        		.amazon-info, .form-alert, alert-success {
+        			max-width: 420px;
+        		}
+        		
+        		.alert-block {
+        			padding: 4px 6px;
+        		}
+        	</style>
+        	<legend>Add Subscription <a id="subscription-search-btn" class="btn btn-primary btn-small" onclick="toggleSubscriptionHide()">Hide</a></legend>
+        	<form id="subscription-form" class="form-horizontal">
+        	    
+	        	<g:HTML ui:field="errorPanel"></g:HTML>
+	            <div class="control-group">
+	        		<div class="controls input-append">
+	        			<g:TextBox ui:field="amazonQuery"></g:TextBox>
+	        			<g:Anchor ui:field="amazonBtn">Auto Fill</g:Anchor> on Amazon to auto-fill the form!!!!
+	       			</div>
+	        	</div>
+	        	
+	        	<div class="control-group">
+	        		<div class="alert alert-info amazon-info controls">
+	        			<g:HTML ui:field="titlePanel">Search on Amazon to retrieve full informations and auto fill.<br></br>Upon subscription, you will be notified when the book becomes available.</g:HTML>
+	        		</div>
+	        	</div>
+        	    
+        	    <div class="control-group">
+        	        <label class="control-label" for="email">EMAIL <span class="red">*</span></label>
+        	        <div class="controls">
+        	            <g:TextBox ui:field="email"></g:TextBox>
+        	        </div>
+        	    </div>
+        	    
+       	        <g:HTMLPanel ui:field="isbnDiv">
+        	        <label class="control-label" for="isbn">ISBN <span class="red">*</span></label>
+        	        <div class="controls">
+        	            <g:TextBox ui:field="isbn"></g:TextBox>
+        	        </div>
+     	        </g:HTMLPanel>
+	        	
+	        	<g:HTMLPanel ui:field="priceDiv">
+	        	    <label class="control-label" for="price">Desired Price </label>
+	        		<div class="controls row">
+	        			<div class="span5 price-span">
+		        			<g:TextBox ui:field="minPrice"></g:TextBox>
+		        			<span class="to-label">to</span>
+		        			<g:TextBox ui:field="maxPrice"></g:TextBox>
+	        			</div>
+	        		</div>
+	        	</g:HTMLPanel>
+        	    
+	        	
+	        	<div class="control-group">
+	        		<label class="control-label" for="title">Title </label>
+	        		<div class="controls">
+	        			<g:TextBox ui:field="title"></g:TextBox>
+	        		</div>
+	        	</div>
+	        	
+	        	<div class="control-group">
+	        		<label class="control-label" for="author">Author</label>
+	        		<div class="controls">
+	        			<g:TextBox ui:field="author"></g:TextBox>
+	        		</div>
+	        	</div>
+	        	
+	        	
+	        	<div class="control-group">
+	        		<label class="control-label" for="imageUrl">Cover Image Url</label>
+	        		<div class="controls">
+	        			<g:TextBox ui:field="imageUrl"></g:TextBox>
+	        			<span class="help-block">The url of cover image of the book.</span>
+	        		</div>
+	        	</div>
+	        	
+        	    <div class="control-group">
+	        		<g:HTML ui:field="formAlert"></g:HTML>
+	        	</div>
+        	    
+        	    <g:Anchor ui:field="subscriptionBtn">Subscribe</g:Anchor>
+        	</form>
+        	
+        	<g:HTMLPanel ui:field="subscriptions"></g:HTMLPanel>
+        </g:HTMLPanel>
+</ui:UiBinder>
