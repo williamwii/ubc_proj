@@ -1,0 +1,43 @@
+Student Name #1: Wei You
+Student ugrad login #1: r9e7
+
+Student Name #2:
+Student ugrad login #2:
+
+Team name (for fun!): 
+
+Acknowledgment that you understand and have followed the course's
+collaboration policy
+(http://www.ugrad.cs.ubc.ca/~cs221/current/syllabus.shtml#conduct):
+
+[[Put your names here again]]
+Wei You
+----------------------------------------------------------------------
+
+We fixed error #1 by: adding a ";"
+
+In file: RandomMazeRunner.cpp
+At line number:48
+Changing this text: nextNode->setPathParent(currNode)
+
+To this text: nextNode->setPathParent(currNode);
+
+
+
+We fixed error #2 by:deleting a "i"
+
+In file: RunMaze.cpp
+At line number: 58
+Changing this text:int maiin (int argc, char *argv[])
+
+To this text: int main (int argc, char *argv[])
+
+
+
+
+----------------------------------------------------------------------
+
+Now, we are basking in our success and excited to forge on!  Nothing's
+gonna stop us now!  We're off to build a working stack of ints for
+Milestone #2!
+

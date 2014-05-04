@@ -1,0 +1,9 @@
+#! /bin/csh -fb
+#
+# This script just runs the maze generator with the arguments you send
+# it.
+#
+
+
+java -jar `dirname $0`/mazegen.jar $*
+
