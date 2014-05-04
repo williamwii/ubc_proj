@@ -1,0 +1,277 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D6A1319170DF95000B992AB /* a7.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D6A1318170DF95000B992AB /* a7.1 */; };
+		3D6A1330170DF99800B992AB /* linalg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A131F170DF99800B992AB /* linalg.cpp */; };
+		3D6A1331170DF99800B992AB /* loadobj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A1321170DF99800B992AB /* loadobj.cpp */; };
+		3D6A1332170DF99800B992AB /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A1323170DF99800B992AB /* Makefile */; };
+		3D6A1333170DF99800B992AB /* meshview.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A132B170DF99800B992AB /* meshview.cpp */; };
+		3D6A1334170DF99800B992AB /* subdivision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A132C170DF99800B992AB /* subdivision.cpp */; };
+		3D6A1335170DF99800B992AB /* trimesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A132E170DF99800B992AB /* trimesh.cpp */; };
+		3D6A1337170DF9AE00B992AB /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6A1336170DF9AE00B992AB /* GLUT.framework */; };
+		3D6A1339170DF9B300B992AB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6A1338170DF9B300B992AB /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D6A1311170DF95000B992AB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				3D6A1319170DF95000B992AB /* a7.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D6A1313170DF95000B992AB /* a7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = a7; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6A1318170DF95000B992AB /* a7.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = a7.1; sourceTree = "<group>"; };
+		3D6A131F170DF99800B992AB /* linalg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = linalg.cpp; sourceTree = "<group>"; };
+		3D6A1320170DF99800B992AB /* linalg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linalg.h; sourceTree = "<group>"; };
+		3D6A1321170DF99800B992AB /* loadobj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = loadobj.cpp; sourceTree = "<group>"; };
+		3D6A1322170DF99800B992AB /* loadobj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadobj.h; sourceTree = "<group>"; };
+		3D6A1323170DF99800B992AB /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		3D6A1325170DF99800B992AB /* camel.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = camel.obj; sourceTree = "<group>"; };
+		3D6A1326170DF99800B992AB /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
+		3D6A1327170DF99800B992AB /* cyl1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cyl1.obj; sourceTree = "<group>"; };
+		3D6A1328170DF99800B992AB /* cyl2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cyl2.obj; sourceTree = "<group>"; };
+		3D6A1329170DF99800B992AB /* icos.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icos.obj; sourceTree = "<group>"; };
+		3D6A132A170DF99800B992AB /* sphere1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere1.obj; sourceTree = "<group>"; };
+		3D6A132B170DF99800B992AB /* meshview.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = meshview.cpp; sourceTree = "<group>"; };
+		3D6A132C170DF99800B992AB /* subdivision.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = subdivision.cpp; sourceTree = "<group>"; };
+		3D6A132D170DF99800B992AB /* subdivision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subdivision.h; sourceTree = "<group>"; };
+		3D6A132E170DF99800B992AB /* trimesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trimesh.cpp; sourceTree = "<group>"; };
+		3D6A132F170DF99800B992AB /* trimesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trimesh.h; sourceTree = "<group>"; };
+		3D6A1336170DF9AE00B992AB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		3D6A1338170DF9B300B992AB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D6A1310170DF95000B992AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6A1339170DF9B300B992AB /* OpenGL.framework in Frameworks */,
+				3D6A1337170DF9AE00B992AB /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D6A130A170DF95000B992AB = {
+			isa = PBXGroup;
+			children = (
+				3D6A1338170DF9B300B992AB /* OpenGL.framework */,
+				3D6A1336170DF9AE00B992AB /* GLUT.framework */,
+				3D6A1315170DF95000B992AB /* a7 */,
+				3D6A1314170DF95000B992AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D6A1314170DF95000B992AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D6A1313170DF95000B992AB /* a7 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D6A1315170DF95000B992AB /* a7 */ = {
+			isa = PBXGroup;
+			children = (
+				3D6A131F170DF99800B992AB /* linalg.cpp */,
+				3D6A1320170DF99800B992AB /* linalg.h */,
+				3D6A1321170DF99800B992AB /* loadobj.cpp */,
+				3D6A1322170DF99800B992AB /* loadobj.h */,
+				3D6A1323170DF99800B992AB /* Makefile */,
+				3D6A1324170DF99800B992AB /* meshes */,
+				3D6A132B170DF99800B992AB /* meshview.cpp */,
+				3D6A132C170DF99800B992AB /* subdivision.cpp */,
+				3D6A132D170DF99800B992AB /* subdivision.h */,
+				3D6A132E170DF99800B992AB /* trimesh.cpp */,
+				3D6A132F170DF99800B992AB /* trimesh.h */,
+				3D6A1318170DF95000B992AB /* a7.1 */,
+			);
+			path = a7;
+			sourceTree = "<group>";
+		};
+		3D6A1324170DF99800B992AB /* meshes */ = {
+			isa = PBXGroup;
+			children = (
+				3D6A1325170DF99800B992AB /* camel.obj */,
+				3D6A1326170DF99800B992AB /* cube.obj */,
+				3D6A1327170DF99800B992AB /* cyl1.obj */,
+				3D6A1328170DF99800B992AB /* cyl2.obj */,
+				3D6A1329170DF99800B992AB /* icos.obj */,
+				3D6A132A170DF99800B992AB /* sphere1.obj */,
+			);
+			path = meshes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D6A1312170DF95000B992AB /* a7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D6A131C170DF95000B992AB /* Build configuration list for PBXNativeTarget "a7" */;
+			buildPhases = (
+				3D6A130F170DF95000B992AB /* Sources */,
+				3D6A1310170DF95000B992AB /* Frameworks */,
+				3D6A1311170DF95000B992AB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = a7;
+			productName = a7;
+			productReference = 3D6A1313170DF95000B992AB /* a7 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D6A130B170DF95000B992AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "William You";
+			};
+			buildConfigurationList = 3D6A130E170DF95000B992AB /* Build configuration list for PBXProject "a7" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3D6A130A170DF95000B992AB;
+			productRefGroup = 3D6A1314170DF95000B992AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D6A1312170DF95000B992AB /* a7 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D6A130F170DF95000B992AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6A1330170DF99800B992AB /* linalg.cpp in Sources */,
+				3D6A1331170DF99800B992AB /* loadobj.cpp in Sources */,
+				3D6A1332170DF99800B992AB /* Makefile in Sources */,
+				3D6A1333170DF99800B992AB /* meshview.cpp in Sources */,
+				3D6A1334170DF99800B992AB /* subdivision.cpp in Sources */,
+				3D6A1335170DF99800B992AB /* trimesh.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3D6A131A170DF95000B992AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3D6A131B170DF95000B992AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3D6A131D170DF95000B992AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D6A131E170DF95000B992AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D6A130E170DF95000B992AB /* Build configuration list for PBXProject "a7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6A131A170DF95000B992AB /* Debug */,
+				3D6A131B170DF95000B992AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D6A131C170DF95000B992AB /* Build configuration list for PBXNativeTarget "a7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6A131D170DF95000B992AB /* Debug */,
+				3D6A131E170DF95000B992AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D6A130B170DF95000B992AB /* Project object */;
+}
