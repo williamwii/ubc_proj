@@ -1,0 +1,20 @@
+To generate a maze, change into your project directory (where you
+should see a bin subdirectory containing this help file) and type:
+
+  bin/mazegen -d5x5 > maze.txt
+
+This will generate a 5 by 5 maze and put it in the file maze.txt.  
+
+You can then run your maze solver on it with:
+
+  ./runmaze < maze.txt
+
+If you kept the visualization code and command-line arguments, you can
+see the solution progress with:
+
+  ./runmaze -v < maze.txt
+
+You can find out more about what the maze generator can do by running:
+
+  bin/mazegen --help
+
