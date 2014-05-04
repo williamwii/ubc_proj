@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D624B8A163EF515006868DE /* a3.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D624B89163EF515006868DE /* a3.1 */; };
+		3D624BA5163EF599006868DE /* a3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D624B95163EF599006868DE /* a3.cpp */; };
+		3D624BA6163EF599006868DE /* image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D624B98163EF599006868DE /* image.cpp */; };
+		3D624BA7163EF599006868DE /* linalg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D624B9A163EF599006868DE /* linalg.cpp */; };
+		3D624BA8163EF599006868DE /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 3D624B9C163EF599006868DE /* Makefile */; };
+		3D624BA9163EF599006868DE /* mygl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D624B9D163EF599006868DE /* mygl.cpp */; };
+		3D624BAA163EF599006868DE /* object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D624B9F163EF599006868DE /* object.cpp */; };
+		3D624BAB163EF599006868DE /* scenario.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D624BA2163EF599006868DE /* scenario.cpp */; };
+		3D624BAD163EF5A4006868DE /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D624BAC163EF5A4006868DE /* GLUT.framework */; };
+		3D624BAF163EF5AB006868DE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D624BAE163EF5AB006868DE /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D624B81163EF515006868DE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				3D624B8A163EF515006868DE /* a3.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D624B83163EF515006868DE /* a3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = a3; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D624B89163EF515006868DE /* a3.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = a3.1; sourceTree = "<group>"; };
+		3D624B95163EF599006868DE /* a3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = a3.cpp; sourceTree = "<group>"; };
+		3D624B96163EF599006868DE /* brick.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = brick.ppm; sourceTree = "<group>"; };
+		3D624B97163EF599006868DE /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
+		3D624B98163EF599006868DE /* image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = image.cpp; sourceTree = "<group>"; };
+		3D624B99163EF599006868DE /* image.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = image.hpp; sourceTree = "<group>"; };
+		3D624B9A163EF599006868DE /* linalg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = linalg.cpp; sourceTree = "<group>"; };
+		3D624B9B163EF599006868DE /* linalg.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = linalg.hpp; sourceTree = "<group>"; };
+		3D624B9C163EF599006868DE /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		3D624B9D163EF599006868DE /* mygl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mygl.cpp; sourceTree = "<group>"; };
+		3D624B9E163EF599006868DE /* mygl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mygl.hpp; sourceTree = "<group>"; };
+		3D624B9F163EF599006868DE /* object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = object.cpp; sourceTree = "<group>"; };
+		3D624BA0163EF599006868DE /* object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = object.hpp; sourceTree = "<group>"; };
+		3D624BA1163EF599006868DE /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		3D624BA2163EF599006868DE /* scenario.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scenario.cpp; sourceTree = "<group>"; };
+		3D624BA3163EF599006868DE /* scenario.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scenario.hpp; sourceTree = "<group>"; };
+		3D624BA4163EF599006868DE /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
+		3D624BAC163EF5A4006868DE /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		3D624BAE163EF5AB006868DE /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D624B80163EF515006868DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D624BAF163EF5AB006868DE /* OpenGL.framework in Frameworks */,
+				3D624BAD163EF5A4006868DE /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D624B78163EF515006868DE = {
+			isa = PBXGroup;
+			children = (
+				3D624BAE163EF5AB006868DE /* OpenGL.framework */,
+				3D624BAC163EF5A4006868DE /* GLUT.framework */,
+				3D624B86163EF515006868DE /* a3 */,
+				3D624B84163EF515006868DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D624B84163EF515006868DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D624B83163EF515006868DE /* a3 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D624B86163EF515006868DE /* a3 */ = {
+			isa = PBXGroup;
+			children = (
+				3D624B95163EF599006868DE /* a3.cpp */,
+				3D624B96163EF599006868DE /* brick.ppm */,
+				3D624B97163EF599006868DE /* cube.obj */,
+				3D624B98163EF599006868DE /* image.cpp */,
+				3D624B99163EF599006868DE /* image.hpp */,
+				3D624B9A163EF599006868DE /* linalg.cpp */,
+				3D624B9B163EF599006868DE /* linalg.hpp */,
+				3D624B9C163EF599006868DE /* Makefile */,
+				3D624B9D163EF599006868DE /* mygl.cpp */,
+				3D624B9E163EF599006868DE /* mygl.hpp */,
+				3D624B9F163EF599006868DE /* object.cpp */,
+				3D624BA0163EF599006868DE /* object.hpp */,
+				3D624BA1163EF599006868DE /* README */,
+				3D624BA2163EF599006868DE /* scenario.cpp */,
+				3D624BA3163EF599006868DE /* scenario.hpp */,
+				3D624BA4163EF599006868DE /* teapot.obj */,
+				3D624B89163EF515006868DE /* a3.1 */,
+			);
+			path = a3;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D624B82163EF515006868DE /* a3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D624B8D163EF515006868DE /* Build configuration list for PBXNativeTarget "a3" */;
+			buildPhases = (
+				3D624B7F163EF515006868DE /* Sources */,
+				3D624B80163EF515006868DE /* Frameworks */,
+				3D624B81163EF515006868DE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = a3;
+			productName = a3;
+			productReference = 3D624B83163EF515006868DE /* a3 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D624B7A163EF515006868DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "William You";
+			};
+			buildConfigurationList = 3D624B7D163EF515006868DE /* Build configuration list for PBXProject "a3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3D624B78163EF515006868DE;
+			productRefGroup = 3D624B84163EF515006868DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D624B82163EF515006868DE /* a3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D624B7F163EF515006868DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D624BA5163EF599006868DE /* a3.cpp in Sources */,
+				3D624BA6163EF599006868DE /* image.cpp in Sources */,
+				3D624BA7163EF599006868DE /* linalg.cpp in Sources */,
+				3D624BA8163EF599006868DE /* Makefile in Sources */,
+				3D624BA9163EF599006868DE /* mygl.cpp in Sources */,
+				3D624BAA163EF599006868DE /* object.cpp in Sources */,
+				3D624BAB163EF599006868DE /* scenario.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3D624B8B163EF515006868DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3D624B8C163EF515006868DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3D624B8E163EF515006868DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D624B8F163EF515006868DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D624B7D163EF515006868DE /* Build configuration list for PBXProject "a3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D624B8B163EF515006868DE /* Debug */,
+				3D624B8C163EF515006868DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D624B8D163EF515006868DE /* Build configuration list for PBXNativeTarget "a3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D624B8E163EF515006868DE /* Debug */,
+				3D624B8F163EF515006868DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D624B7A163EF515006868DE /* Project object */;
+}
