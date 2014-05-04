@@ -1,0 +1,32 @@
+/* Formatting specific to the application */
+
+body {
+  padding: 10px;
+}
+
+/* statisticaldata header row */
+.statsListHeader {
+  background-color: #2062B8;
+  color: white;
+  font-style: italic;
+  margin-right: auto;
+}
+
+/* statistic flex table */
+.statsList {
+  border: 1px solid silver;
+  padding: 2px;
+  margin-bottom:6px;
+}
+
+/* stock list Price and Change fields */
+.statsListValueColumn {
+  text-align: right;
+  width:8em;
+}
+
+/* Add stats panel */
+.addPanel {
+  margin: 10px 0px 15px 0px;
+  text-align: right;
+}
