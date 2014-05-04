@@ -1,0 +1,36 @@
+
+University of British Columbia
+Department of Computer Science
+CPSC 211  Winter  2010
+Project Part __2__
+ 
+Student 1:
+Name:Wei You
+Student No:77610095
+Lab Section:L1E
+Email:williamy321456@hotmail.com
+
+I certify that the work in the attached assignment was performed ONLY BY ME AND MY PARTNER  whose name is listed below, except the parts that have been properly acknowledged.
+
+In addition, I indicate that I am fully aware of the rules and consequences of plagiarism, as set forth by the Department of Computer Science and the University of British Columbia.
+
+Signed (just type your name) :Wei You
+
+Date: Oct 15, 2010
+
+
+ 
+ 
+Student 2:
+Name:
+Student No:
+Lab Section:
+Email:
+
+I certify that the work in the attached assignment was performed ONLY BY ME AND MY PARTNER  whose name is listed above, except the parts that have been properly acknowledged.
+
+In addition, I indicate that I am fully aware of the rules and consequences of plagiarism, as set forth by the Department of Computer Science and the University of British Columbia.
+
+Signed (just type your name) :
+
+Date: 
