@@ -1,0 +1,107 @@
+#3
+All tests succeeded. My implementation works.
+
+#4
+S7:
+load the address of ping function, store the return address of ping,
+go to ping. Ping function does nothing and return right away, then halt.
+
+S8:
+Initialize the run time stack.
+load address of foo function, and get the return address of foo.
+go to foo and store the return address on stack.
+load the address of b function, and get the return address of b.
+go to b and create activation frame.
+store 0 into argument 0 on stack.
+Store 1 into argument 1 on stack.
+deactivate the stack frame.
+return back to foo.
+restore the return address and deactivate the frame.
+return back to start.
+halt.
+
+S9-arg-regs:
+Initialize the run time stack.
+load address of foo function, and get the return address of foo.
+go to foo and store the return address on stack.
+load 1 into r0 and 2 into r1.
+load the address of add function.
+store the return address of add and go to add.
+add r1 adn r0 and put result in r1.
+return back to foo.
+store result into s.
+restore return address of foo and return to start.
+halt.
+
+S9-args-stack:
+same with S9-arg-regs.
+
+#6
+Because the copy function copy src until 0 is found in the list. Also the copy function
+only create an array of 2 elements, so when the stack fram is created, it only allocate
+8 byte of memory for the arry. If I have a src that have 3 elements and the third element
+store an address of my virus, the copy function will overwrite the return address of copy
+to my virus address. When it is returned, it will jump to my virus code and start executing
+the virus.
+
+#7
+SA:
+Initialize the run time stack.
+load address of bar function in r0.
+get and store the return address into r6.
+jump to bar and store the return address on stack.
+load a into argument 0 on stack.
+load the address of foo into r0.
+get and store the return address into r6.
+call foo(a).
+store return address on stack.
+laod a into r0.
+get and store return address in r6.
+jump to a->ping() and return.
+store return address on stack.
+get and store return address in r6.
+jump to a->pong() and return.
+restore the return address and return back to bar().
+load the address then the value of b into r0. Then store it on stack as argument 1.
+get the return address and load into r6.
+call foo(b)
+store return address on stack.
+laod b into r0.
+get and store return address in r6.
+jump to b->ping() and return.
+store return address on stack.
+get and store return address in r6.
+jump to a->pong() and return.
+restore the return address and return back to bar().
+restore the stack and return back to start.
+halt.
+
+SB:
+load the address then value of i into r0.
+load -19 into r1.
+calculate i-19 and load in r1.
+if i-19 is greater than 0 ( i is greater than 19 )(jumped):
+load -23 into r1.
+calculate i-23 and load in r1.
+if i is greater than 23, branch to default.(did not jump here)
+load -20 in r1.
+calculate i-20 and load in r0.
+load the address of jmptable into r1
+jump to jmptable[i-20] ( case 22 )
+load 12 into r1.
+jump to done.
+load address of j into r0.
+store i into j.
+jump to count.
+halt.
+
+#8
+A6-a:
+Find the maxumum value in the static array and store it in memory.
+
+A6-b:
+A main function that call af function with parameters 3 and 4.
+Af calls bf with parameters 3 and 4.
+Bf calculate 3+a[4] and put the sum back to a[4].
+Af calls bf again with parameters 1 and 2.
+Bf calculate 1+a[2] and put the sum back to a[2].
