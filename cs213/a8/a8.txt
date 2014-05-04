@@ -1,0 +1,21 @@
+CPSC 213 A8
+Wei You
+r9e7
+
+#2
+My multiple read and single write program works.
+It allows multiple readers to read and print the counter.
+When a writer gets in the monitor for the count, it sets the holder to
+be the writer and disallow any reader or writer then increament the counter, 
+so any reader after the writer will read and print the new value.
+
+#3
+The program bounded-queue.c is the bounded queue implementation and also the 
+tester for the condition varibles for requirement 5.
+
+requirement 8:
+uniprocessor: the output jumps a bit because the yield is 50% chance and
+	we don't know which thread is going to execute next.
+4 processor: the output is in ascending order, because there are 4 threads
+	in total, each processor will deal with one thread so they will take
+	turns in perfect order.(enqueue,dequeue,enqueue,dequeue...)
