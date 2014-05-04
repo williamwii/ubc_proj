@@ -1,0 +1,30 @@
+const N = 1
+range T = 0..N
+
+FLAG0 = FLAG0[0],
+FLAG0[u:T] = (read_flag_zero[u] -> FLAG0[u]
+			 |write_flag_zero[v:T] -> FLAG0[v]).
+
+FLAG1 = FLAG1[0],
+FLAG1[u:T] = (read_flag_one[u] -> FLAG1[u]
+			 |write_flag_one[v:T] -> FLAG1[v]).
+
+TURN = TURN[0],
+TURN[u:T] = (read_turn[u] -> TURN[u]
+			|write_turn[v:T] -> TURN[v]).
+
+P0 = (write_flag_zero[1] -> write_turn[1] -> WAIT0),
+WAIT0 = (read_flag_one[f1:T] -> read_turn[t:T] ->
+			(when (f1 == 1 && t == 1) wait_zero -> WAIT0
+			|when (f1 == 0 || t == 0) crit_zero -> CRIT0)
+		),
+CRIT0 = (do_zero -> write_flag_zero[0] -> P0).
+
+P1 = (write_flag_one[1] -> write_turn[0] -> WAIT1),
+WAIT1 = (read_flag_zero[f0:T] -> read_turn[t:T] ->
+			(when (f0 == 1 && t == 0) wait_one -> WAIT1
+			|when (f0 == 0 || t == 1) crit_one -> CRIT1)
+		),
+CRIT1 = (do_one -> write_flag_one[0] -> P1).
+
+||PETERSON = (P0 || P1).
