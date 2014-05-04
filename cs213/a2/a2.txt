@@ -1,0 +1,35 @@
+Assignment #2
+
+3)My test case is based on S1-global-static.s with a few extra instructions added.
+	All of the test secceed and my implementation works.
+
+  Test Description:
+	- Load 0 into register 0
+	- load address of a into register 1
+	- Store 0 in a
+	- Load address of b into register 0
+	- Load address of a into register 1
+	- Load value of a into register 2
+	- Store value of a into b[a]
+	- Load 1 into register 3
+	- Store value in register 3 into b[1]
+	- Load value of b[1] into register 1
+	
+4) snippets S1:
+	- Load 0 into register 0
+	- load address of a into register 1
+	- Store 0 in a
+	- Load address of b into register 0
+	- Load address of a into register 1
+	- Load value of a into register 2
+	- Store value of a into b[a]
+	
+   snippets S2:
+	- Load 0 into register 0
+	- load address of a into register 1
+	- Store 0 in a
+	- Load address of b into register 0
+	- Load address of b[0] into register 0 (set register 0 as pointer to array)
+	- Load address of a into register 1
+	- Load a into register 2
+	- Store a into b[a]
